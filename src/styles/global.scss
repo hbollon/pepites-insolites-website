@@ -1,0 +1,75 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: darken(#72ffe7, 40);
+}
+
+.container.is-fluid {
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include bp(mobile-and-tablet) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.main-card {
+  @include bp(mobile) {
+    padding: 0;
+    box-shadow: none;
+
+    .card-content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+p,
+ul,
+.card-footer {
+  a {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $main-color;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+
+    &:hover {
+      color: $main-color;
+
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+input,
+textarea {
+  border: 1px solid $main-color !important;
+}
