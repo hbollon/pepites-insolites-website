@@ -100,3 +100,51 @@ input,
 textarea {
   border: 1px solid $main-color !important;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+// Titles
+.titled {
+  font-family: "Nunito", sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 64px;
+  margin-bottom: 3rem;
+  
+  @include bp(mobile-and-tablet) {
+      font-size: 3em;
+      margin-bottom: 0.5rem;
+  }
+}
+
+.second-titled {
+  font-family: "Nunito", sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 64px;
+}
+
+.subtitled {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 36px;
+
+  @include bp(mobile-and-tablet) {
+      font-size: 1.2em;
+  }
+}
+
+.subtitle {
+  color: #363636;
+}
