@@ -11,10 +11,9 @@
           class="start-desktop"
         />
         <img src="@/assets/home/house3.svg" class="start-tablet" alt="House" />
-
         <img src="@/assets/home/house2.svg" class="start-mobile" alt="House" />
         <div class="video-text-container">
-          <img src="@/assets/favicon-white.svg" alt="Logo" />
+          <img class="image" src="@/assets/favicon-white.png" alt="Logo" />
           <h1>{{ $t("startpage.intro.text") }}</h1>
           <p>{{ $t("startpage.intro.slogan") }}</p>
           <div class="buttons mt-6">
@@ -36,14 +35,9 @@
           </div>
         </div>
       </header>
-      <!-- <ScrollDown /> -->
     </div>
-
-    <div id="scrollDown" />
-    <!-- Sections -->
+    <div id="scrollDown"/>
     <HomeSections />
-    <!-- <Booking />
-    <Contact /> -->
   </div>
 </template>
 
@@ -152,6 +146,18 @@ export default defineComponent({
 
       @include bp(mobile) {
         font-size: 3em;
+      }
+
+      @include bp(mobile-and-tablet) {
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 1) 75%,
+          rgba(255, 255, 255, 0) 90%
+        );
+        background-clip: text;
+        line-height: 1.1em;
+        letter-spacing: 8px;
+        margin-top: 10px;
       }
 
       @include bp(tablet) {
