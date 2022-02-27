@@ -21,10 +21,9 @@
         @click="{closeNav(); routerPush('start')}"
       >
         <img 
-          src="" 
-          width="152" 
-          height="28" 
+          src="@/assets/logo-white.png"
           alt="Logo"
+          style="max-height: 45px"
         >
       </a>
 
@@ -129,25 +128,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch, computed } from 'vue'
+import { defineComponent, ref, watch, computed, SetupContext } from 'vue'
 import { useI18n } from 'vue-i18n'
 import RouterNavigator from '@/mixins/RouterNavigator'
-import { CompositionAPIEmit } from 'vue-typed-emit'
 import { useRoute } from 'vue-router'
 
-interface ShowNavValue {
+interface EventShowNavValue {
   showNavValue: boolean
 }
 
-interface ShowNavValueEmit {
-  emit: CompositionAPIEmit<ShowNavValue>
+interface SetupContextExtended<EventShowNavValue extends Record<string, any>> extends SetupContext {
+    emit: <Key extends keyof EventShowNavValue>(event: Key, payload: EventShowNavValue[Key]) => void;
 }
 
 export default defineComponent({
   name: 'Header',
   emits: ['showNavValue'],
 
-  setup(_: boolean, { emit }: ShowNavValueEmit) {
+  setup(props, context: SetupContextExtended<EventShowNavValue>) {
     const { t } = useI18n({ useScope: 'global' })
     const route = useRoute()
     let showNav = ref<boolean>(false)
@@ -172,7 +170,7 @@ export default defineComponent({
     }
 
     watch(showNav, (val: boolean) => {
-        emit('showNavValue', val)
+        context.emit('showNavValue', val)
     })
 
     window.addEventListener("scroll", () => {
