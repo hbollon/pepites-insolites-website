@@ -38,10 +38,10 @@
               </h2>
               <div class="buttons">
                 <button 
-                  class="button is-primary hvr-icon-forward" 
+                  class="button is-primary" 
                   @click="routerPush(section.route)"
                 >
-                  {{ $t("nav.readMore") }}&nbsp;<i class="las la-angle-right hvr-icon" />
+                  {{ $t("nav.readMore") }}&nbsp;<font-awesome-icon class="ml-1" icon="forward" />
                 </button>
               </div>
             </div>

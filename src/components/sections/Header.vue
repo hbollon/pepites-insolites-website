@@ -72,18 +72,18 @@
           <div class="buttons">
             <!-- Call to action buttons -->
             <a
-              class="button call-to-action hvr-icon-pulse"
+              class="button call-to-action fa-pulse-hover"
               @click="{closeNav(); routerPush('booking')}"
               @keyup.enter="routerPush('booking')"
             >
-              {{ $t("nav.book") }}&nbsp;<i class="las la-shopping-bag hvr-icon" />
+              {{ $t("nav.book") }}&nbsp;<font-awesome-icon class="ml-1" icon="shopping-bag" />
             </a>
             <a 
-              class="button call-to-action hvr-icon-pulse"
+              class="button call-to-action fa-pulse-hover"
               @click="{closeNav(); routerPush('contact')}"
               @keyup.enter="routerPush('contact')"
             >
-              {{ $t("nav.contact") }}&nbsp;<i class="las la-envelope hvr-icon" />
+              {{ $t("nav.contact") }}&nbsp;<font-awesome-icon class="ml-1" icon="envelope" />
             </a>
 
             <!-- Language picker -->

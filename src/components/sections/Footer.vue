@@ -30,26 +30,20 @@
                 <a 
                   href="mailto:" 
                   target="_blank"
-                  class="button is-primary is-medium hvr-icon-pulse" 
+                  class="button is-primary is-medium" 
                   aria-hidden="true"
                   rel="noreferrer"
                 >
-                  <i 
-                    class="las la-envelope hvr-icon" 
-                    aria-label="Email"
-                  />
+                  <font-awesome-icon icon="envelope" />
                 </a>
                 <a 
                   href="tel:" 
                   target="_blank"
-                  class="button is-primary is-medium hvr-icon-pulse" 
+                  class="button is-primary is-medium" 
                   aria-hidden="true"
                   rel="noreferrer"
                 >
-                  <i 
-                    class="las la-phone hvr-icon" 
-                    aria-label="Phone"
-                  />
+                  <font-awesome-icon icon="phone" />
                 </a>
               </div>
             </div>
@@ -91,8 +85,8 @@
             </div>
             <div class="column is-one-third show-desktop">
               <img 
-                src="" 
-                alt="" 
+                src="@/assets/logo-white.png"
+                alt="Logo"
                 style="height: 40px;"
               >
               <div class="content mb-4">
@@ -112,24 +106,18 @@
                 <a 
                   href="mailto:" 
                   target="_blank"
-                  class="button is-primary is-medium hvr-icon-pulse" 
+                  class="button is-primary is-medium fa-pulse-hover" 
                   aria-hidden="true"
                 >
-                  <i 
-                    class="las la-envelope hvr-icon" 
-                    aria-label="Email" 
-                  />
+                  <font-awesome-icon icon="envelope" />
                 </a>
                 <a 
                   href="tel:" 
                   target="_blank"
-                  class="button is-primary is-medium hvr-icon-pulse" 
+                  class="button is-primary is-medium fa-pulse-hover" 
                   aria-hidden="true"
                 >
-                  <i 
-                    class="las la-phone hvr-icon" 
-                    aria-label="Phone"
-                  />
+                  <font-awesome-icon icon="phone" />
                 </a>
               </div>
             </div>

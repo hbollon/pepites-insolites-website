@@ -27,10 +27,7 @@
             <a class="button is-white" @click="routerPush('booking')">
               {{ $t("nav.book") }}
               &nbsp;
-              <i
-                class="las la-shopping-bag hvr-icon"
-                aria-label="Shopping bag"
-              />
+              <font-awesome-icon icon="shopping-bag" />
             </a>
           </div>
         </div>
