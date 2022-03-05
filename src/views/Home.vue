@@ -142,7 +142,7 @@ export default defineComponent({
       background-clip: text;
       -webkit-text-fill-color: transparent;
       line-height: 1.25em;
-      font-size: 8em;
+      font-size: 6em;
 
       @include bp(mobile) {
         font-size: 3em;
