@@ -1,0 +1,76 @@
+{
+    "nav": {
+        "start": "Présentation",
+        "about": {
+            "main": "Nos logements",
+            "description": "Information",
+            "faq": "FAQ"
+        },
+        "find": {
+            "main": "Nous trouver",
+            "travelPlanner": "Travel planner",
+            "map": "Map"
+        },
+        "explore": {
+            "main": "Experience",
+            "activities": "Activities",
+            "sights": "Sights",
+            "events": "Events",
+            "food": "Food / going out"
+        },
+        "book": "Réservation",
+        "contact": "Contact",
+        "readMore": "En savoir plus",
+        "showMore": "Voir plus",
+        "showLess": "Voir moins",
+        "loading": "Chargement..."
+    },
+
+    "footer": {
+        "menu": "Menu",
+        "links": "Liens",
+        "by": "Site internet réalisé par",
+        "about": "Ce site internet a été réalisé afin de regrouper tout les biens mis à disposition par PépitesInsolites afin de passer des petits moments d'exceptions en symbiose avec la nature.",
+        "book": "Vous souhaitez réserver ? Rendez vous sur",
+        "login": "Se connecter"
+    },
+
+    "booking": {
+        "title": "Réservation",
+        "text": "Réserver une location via",
+        "visitors": "Visiteurs",
+        "nights": "Rented nights",
+        "reviews": "Avis",
+        "by": "par",
+        "loading": "Chargement des avis..."
+    },
+
+    "contact": {
+        "title": "Contact",
+        "text": "Contact us if you have questions before or during your stay and we will help you as soon as possible!",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "sendSuccess": "Message sent successfully!"
+    },
+
+    "startpage": {
+        "intro": {
+            "text": "Pépites insolites",
+            "slogan": "Un moment avec la nature"
+        },
+        "about": {
+            "title": "Nos logements",
+            "text": "Une cabane au milieu de la nature? Une tiny-house? Ou encore un appartement chaleureux aux couleurs de la Haute-Savoie? Nous avons avons forcément de quoi vous faire passer un moment inoubliable!"
+        },
+        "find": {
+            "title": "Où nous trouver",
+            "text": ""
+        },
+        "explore": {
+            "title": "Expériences",
+            "text": "Envie d'associé à ce moment d'exception une aventure unique? Nous vous proposons des activités et des lieux à visiter pour vous faire découvrir la nature! Découvrez dès maintenant ce que vous propose notre beau département!"
+        }
+    }
+}
