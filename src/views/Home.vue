@@ -165,7 +165,7 @@ export default defineComponent({
     p {
       font-size: 1.25em;
       font-weight: 100;
-      margin-top: -1.5em;
+      margin-top: -1.0em;
 
       @include bp(mobile-and-tablet) {
         margin-top: 0;
