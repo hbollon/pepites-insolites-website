@@ -7,13 +7,13 @@ import i18n from "./lang/index";
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faEnvelope, faPhone, faShoppingBag, faForward } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone, faShoppingBag, faForward, faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faEnvelope, faPhone, faShoppingBag, faForward)
+library.add(faEnvelope, faPhone, faShoppingBag, faForward, faAngleUp, faAngleDown)
 
 import '@/styles/global.scss'
 import '@/styles/constants.scss'
