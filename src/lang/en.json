@@ -3,8 +3,7 @@
         "start": "Start",
         "about": {
             "main": "About the cottage",
-            "description": "Information",
-            "faq": "FAQ"
+            "description": "Information"
         },
         "find": {
             "main": "Find it",
@@ -18,6 +17,7 @@
             "events": "Events",
             "food": "Food / going out"
         },
+        "faq": "FAQ",
         "book": "Book",
         "contact": "Contact",
         "readMore": "Read more",
@@ -29,9 +29,9 @@
     "footer": {
         "menu": "Menu",
         "links": "Links",
-        "by": "by",
-        "about": "This website is made for finding and exploring the cottage, and it's nearby surroundings.",
-        "book": "You can book the cottage via",
+        "by": "Website made by",
+        "about": "This website was created to bring together all the properties made available by PépitesInsolites in order to spend small moments of exceptions in symbiosis with nature.",
+        "book": "Do you want to book? Go to",
         "login": "Log in"
     },
 
