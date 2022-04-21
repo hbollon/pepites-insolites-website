@@ -15,6 +15,9 @@ export default defineComponent({
     Header,    
     Footer,    
   },
+  mounted() {
+    document.title = "Pépites Insolites | Location & Nature"
+  },
 });
 </script>
 
