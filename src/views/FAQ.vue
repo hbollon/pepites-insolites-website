@@ -2,7 +2,6 @@
   <div>
     <SubpageLanding
       :breadcrumbs="breadcrumbs"
-      :background-image="backgroundImage"
       :title="title"
       :text="text"
     />

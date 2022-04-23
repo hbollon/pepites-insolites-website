@@ -1,7 +1,6 @@
 <template>
   <div class="has-background-white pb-6">
     <div class="container is-fluid">
-      <h2 class="titled mt-6 has-text-centered">FAQ</h2>
       <div v-if="faqItems.length > 0" class="columns is-mobile is-multiline">
         <div
           v-for="question in faqItems"
