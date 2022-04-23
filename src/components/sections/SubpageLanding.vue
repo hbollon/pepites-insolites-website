@@ -38,8 +38,8 @@ export default defineComponent({
     },
     backgroundImage: {
       type: String,
-      default: 'home/house-front.png',
-      required: true
+      default: "",
+      required: false
     },
     title: {
       type: String,
@@ -55,7 +55,13 @@ export default defineComponent({
 
   setup(props) {
     let backgroundImageURL = computed(() => {
-      return require(`@/assets/${props.backgroundImage}`)
+      let img = props.backgroundImage
+      if (img == "") {
+        let randNum = Math.floor(Math.random() * (26 - 1 + 1)) + 1;
+        img = `img/${randNum}.jpg`
+      }
+      console.log(img)
+      return require(`@/assets/${img}`)
     })
 
     let backgroundImageStyle = computed(() => {
@@ -70,44 +76,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+
 .subpage-intro-container {
   width: 100vw;
   height: 70vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 70%;
-  background-position-x: 25vh;
-  background-position-y: -20vh;
+  background-size: contain;
+  background-position: center center;
 
   @include bp(mobile) {
-    background-size: 110%;
-    background-position-y: 10vh;
     height: 60vh;
-    background-position-x: 0;
-  }
-
-  @include bp(tablet) {
-    background-size: 110%;
-    background-position-y: 0;
-    background-position-x: 0;
-  }
-
-  @include bp(desktop-s) {
-    background-size: 90%;
-    background-position-x: 5vh;
-    background-position-y: 0vh;
-  }
-
-  @include bp(desktop-m) {
-    background-size: 80%;
-    background-position-x: 15vh;
-    background-position-y: 5vh;
-  }
-
-  @include bp(desktop-l) {
-    background-size: 60%;
-    background-position-x: 30vh;
-    background-position-y: 0vh;
   }
 }
 
