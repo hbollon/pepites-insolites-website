@@ -160,7 +160,7 @@ export default defineComponent({
       { route: "home", title: t("nav.start") },
       { route: "about", title: t("nav.about.main") },
       { route: "find", title: t("nav.find.main") },
-      { route: "explore", title: t("nav.explore.main") },
+      { route: "explore", title: t("nav.explore") },
       { route: "faq", title: t("nav.faq") },
     ])
 

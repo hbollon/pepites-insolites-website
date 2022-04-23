@@ -10,13 +10,7 @@
             "travelPlanner": "Travel planner",
             "map": "Map"
         },
-        "explore": {
-            "main": "Experience",
-            "activities": "Activities",
-            "sights": "Sights",
-            "events": "Events",
-            "food": "Food / going out"
-        },
+        "explore": "Galery",
         "faq": "FAQ",
         "book": "Book",
         "contact": "Contact",
