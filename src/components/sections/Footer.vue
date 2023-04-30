@@ -4,11 +4,11 @@
       class="hero is-small"
     >
       <div class="hero-body">
-        <div class="container is-fluid">
+        <div class="container is-fluid is-fluid-mobile-override">
           <div class="columns is-desktop is-centered">
             <div class="column is-one-third show-mobile">
               <img 
-                src="" 
+                src="@/assets/logo-white.png" 
                 alt="Logo" 
                 style="height: 40px;"
               >
@@ -18,7 +18,7 @@
                   <br>
                   {{ $t("footer.book") }} 
                   <a 
-                    href=""
+                    href="https://www.airbnb.fr/users/show/490286325"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -95,7 +95,7 @@
                   <br>
                   {{ $t("footer.book") }} 
                   <a 
-                    href=""
+                    href="https://www.airbnb.fr/users/show/490286325"
                     target="_blank"
                   >
                     airbnb.com
@@ -174,13 +174,13 @@ export default defineComponent({
       { route: "start", title: t("nav.start") },
       { route: "about", title: t("nav.about.main") },
       { route: "find", title: t("nav.find.main") },
-      { route: "explore", title: t("nav.explore.main") },
+      { route: "explore", title: t("nav.explore") },
       { route: "booking", title: t("nav.book") },
       { route: "contact", title: t("nav.contact") },
     ])
 
     const links = computed(() => [
-      { link: '', title: 'Airbnb' },
+      { link: 'https://www.airbnb.fr/users/show/490286325', title: 'Airbnb' },
       { link: '', title: 'Instagram' },
       { link: '', title: 'Facebook' },
     ])
@@ -203,12 +203,6 @@ footer {
   @include bp(mobile) {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-}
-
-.credits {
-  @include bp(mobile) {
-    padding-top: 1rem;
   }
 }
 
@@ -236,6 +230,13 @@ footer {
 
   @include bp(mobile-and-tablet) {
     display: block;
+  }
+}
+
+.is-fluid-mobile-override {
+  @include bp(mobile-and-tablet) {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
 }
 
