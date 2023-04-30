@@ -16,7 +16,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faEnvelope, faPhone, faShoppingBag, faForward, faAngleUp, faAngleDown)
 
 import '@/styles/global.scss'
-import '@/styles/constants.scss'
 import '@/styles/icon-effects.scss'
 
 createApp(App)
