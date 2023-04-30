@@ -39,7 +39,7 @@ export default defineComponent({
     const title = computed<string>(() => t("faq.title"))
     const text = computed<string>(() => t("faq.text"))
 
-    let faqItems = ref<FAQItem[]>([
+    const faqItems = ref<FAQItem[]>([
       {
         id: "1",
         category: "1",
@@ -77,6 +77,19 @@ export default defineComponent({
         answer: "Answer 6",
       },
     ])
+    
+    // let faqItems = ref<typeof FAQItem[]>([])
+    // db.collection('faq').where("category", "==", "faq").get().then(querySnapshot => {
+    //   querySnapshot.forEach(doc => {
+    //     const data = {
+    //       id: doc.id,
+    //       category: doc.data().category,
+    //       question: doc.data().question,
+    //       answer: doc.data().answer,
+    //     }
+    //     faqItems.value.push(data)
+    //   })
+    // })
 
     return {
       backgroundImage,

@@ -137,7 +137,8 @@ interface EventShowNavValue {
   showNavValue: boolean
 }
 
-interface SetupContextExtended<EventShowNavValue extends Record<string, any>> extends SetupContext {
+// TODO: check if still working after upgrade
+interface SetupContextExtended<EventShowNavValue extends Record<string, any>> {
     emit: <Key extends keyof EventShowNavValue>(event: Key, payload: EventShowNavValue[Key]) => void;
 }
 
@@ -148,8 +149,8 @@ export default defineComponent({
   setup(props, context: SetupContextExtended<EventShowNavValue>) {
     const { t } = useI18n({ useScope: 'global' })
     const route = useRoute()
-    let showNav = ref<boolean>(false)
-    let { routerPush, routerPushWithHash } = RouterNavigator()
+    const showNav = ref<boolean>(false)
+    const { routerPush, routerPushWithHash } = RouterNavigator()
     const langs = ref([
       { name: "fr", title: "Français" },
       { name: "en", title: "English" }

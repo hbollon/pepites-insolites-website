@@ -75,7 +75,7 @@ export default defineComponent({
 
   setup() {
     const { t } = useI18n({ useScope: 'global' })
-    let { routerPush } = RouterNavigator()
+    const { routerPush } = RouterNavigator()
 
     const sectionContents = computed(() => [
       {

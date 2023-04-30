@@ -82,9 +82,9 @@ export default defineComponent({
 
   setup() {
     const { t } = useI18n({ useScope: "global" });
-    let answer = ref<string>("none");
+    const answer = ref<string>("none");
 
-    let showAnswer = (id: string) => {
+    const showAnswer = (id: string) => {
       if (answer.value === id) {
         answer.value = "none";
       } else {

@@ -51,9 +51,9 @@ export default defineComponent({
   },
 
   setup() {
-    let { routerPush } = RouterNavigator();
+    const { routerPush } = RouterNavigator();
     onMounted(() => {
-      let mobilevideo = document.getElementsByTagName("video")[0];
+      const mobilevideo = document.getElementsByTagName("video")[0];
       mobilevideo.setAttribute("playsinline", "");
       mobilevideo.setAttribute("muted", "");
     });

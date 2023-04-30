@@ -168,7 +168,7 @@ export default defineComponent({
   name: "Footer",
   setup() {
     const { t } = useI18n({ useScope: 'global' })
-    let { routerPush } = RouterNavigator()
+    const { routerPush } = RouterNavigator()
 
     const navs = computed(() => [
       { route: "start", title: t("nav.start") },

@@ -54,17 +54,17 @@ export default defineComponent({
   },
 
   setup(props) {
-    let backgroundImageURL = computed(() => {
+    const backgroundImageURL = computed(() => {
       let img = props.backgroundImage
       if (img == "") {
-        let randNum = Math.floor(Math.random() * (26 - 1 + 1)) + 1;
+        const randNum = Math.floor(Math.random() * (26 - 1 + 1)) + 1;
         img = `img/${randNum}.jpg`
       }
       console.log(img)
       return require(`@/assets/${img}`)
     })
 
-    let backgroundImageStyle = computed(() => {
+    const backgroundImageStyle = computed(() => {
       return `backgroundImage: url(${backgroundImageURL.value})`
     })
 
