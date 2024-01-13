@@ -38,7 +38,6 @@ export default defineComponent({
 
     const title = computed<string>(() => t("faq.title"))
     const text = computed<string>(() => t("faq.text"))
-
     const faqItems = ref<FAQItem[]>([
       {
         id: "1",

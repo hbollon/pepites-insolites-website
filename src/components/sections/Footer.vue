@@ -172,7 +172,7 @@ export default defineComponent({
 
     const navs = computed(() => [
       { route: "start", title: t("nav.start") },
-      { route: "about", title: t("nav.about.main") },
+      { route: "offers", title: t("nav.offers.main") },
       { route: "find", title: t("nav.find.main") },
       { route: "explore", title: t("nav.explore") },
       { route: "booking", title: t("nav.book") },

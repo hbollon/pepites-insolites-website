@@ -65,7 +65,7 @@ import { useI18n } from "vue-i18n";
 
 export interface FAQItem {
   id: string;
-  category: string;
+  category?: string;
   question: string;
   answer: string;
 }

@@ -1,7 +1,7 @@
 {
     "nav": {
         "start": "Présentation",
-        "about": {
+        "offers": {
             "main": "Nos logements",
             "description": "Information"
         },
@@ -37,6 +37,133 @@
         "reviews": "Avis",
         "by": "par",
         "loading": "Chargement des avis..."
+    },
+
+    "offers": {
+        "title": "Nos locations",
+        "text": "Différents univers pour des aventures hors du temps.",
+        "placeholders": {
+            "informations": {
+                "title": "Information",
+                "features_service": "Fonctionnalités & services",
+                "rules": "Règles",
+                "check_in": "Arrivée à",
+                "check_out": "Départ à",
+                "capacity": "Capacité: %d personnes"
+            }
+        },
+        "locations": [
+            {
+                "title": "Tiny House",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in libero lacus. Sed a gravida arcu. Suspendisse potenti. Fusce porta lectus nec sapien luctus, nec tincidunt mi tempor. Donec condimentum sit amet sem sed porta. Nullam eleifend arcu ex, a feugiat mi molestie eget. Etiam vel nibh volutpat, commodo neque a, faucibus sapien. Suspendisse potenti.",
+                "features_services": [
+                    {
+                        "category": "Salle de bain",
+                        "items": [
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Salle de bain",
+                        "items": [
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Salle de bain",
+                        "items": [
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            },
+                            {
+                                "title": "Toilette",
+                                "icon": "la-toilet"
+                            }
+                        ]
+                    }
+                ],
+                "rules": [
+                    {
+                        "title": "Evènements autorisés",
+                        "allowed": true
+                    },
+                    {
+                        "title": "Animaux autorisés",
+                        "allowed": false
+                    },
+                    {
+                        "title": "Fumer à l'intérieur autorisé",
+                        "allowed": false
+                    }
+                ],
+                "faq": [
+                    {
+                        "id": 1,
+                        "question": "Question 1",
+                        "answer": "Answer 1"
+                    },
+                    {
+                        "id": 2,
+                        "question": "Question 2",
+                        "answer": "Answer 2"
+                    },
+                    {
+                        "id": 3,
+                        "question": "Question 3",
+                        "answer": "Answer 3"
+                    },
+                    {
+                        "id": 4,
+                        "question": "Question 4",
+                        "answer": "Answer 4"
+                    },
+                    {
+                        "id": 5,
+                        "question": "Question 5",
+                        "answer": "Answer 5"
+                    }
+                ]
+            }
+        ]
     },
 
     "faq": {

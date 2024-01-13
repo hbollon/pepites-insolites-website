@@ -159,7 +159,7 @@ export default defineComponent({
     // Keep routes in computed to make i18n change language dynamically
     const navs = computed(() => [
       { route: "home", title: t("nav.start") },
-      { route: "about", title: t("nav.about.main") },
+      { route: "offers", title: t("nav.offers.main") },
       { route: "find", title: t("nav.find.main") },
       { route: "explore", title: t("nav.explore") },
       { route: "faq", title: t("nav.faq") },
